@@ -6,12 +6,15 @@ This is an experimental new version of the UNO bot. DO NOT pester Ratismal with 
 
 1. [Description](#description)
 2. [Configurable Rules](#configurable-rules)
-3. [Selfhosting](#selfhosting)
-4. [Disclaimer](#disclaimer)
+3. [Tupperbox Integration](#tupperbox-integration)
+4. [Selfhosting](#selfhosting)
+5. [Disclaimer](#disclaimer)
 
 ## Description
 
 This is an UNO bot designed for the Discord chat platform. The intent of this bot is to provide a fun and fulfilling UNO experience with your friends!
+
+I was feeling the original UNO bot, while quite fun, was lacking some important customization features, in particular playing with UNO decks other than the classic one. For this reason, I created this fork.
 
 ### Commands
 
@@ -171,13 +174,22 @@ Default: false
 
 Automatically plays a card after drawing, if possible. If a wild card is drawn, will give a prompt for color.
 
+## Tupperbox Integration
+
+The current state of compatibility with Tupperbox has not yet been tested. Long-term goals are:
+- Any amount of Tuppers, including multiple with the same owner, can take part in an UNO game.
+- Tuppers can run Uno commands as if they were regular users.
+- A Tupper's owner can join a game alongside their Tuppers.
+- Basically, Tuppers are treated the same as regular users, and are treated as separate from their owner.
+
 ## Selfhosting
 
 You may selfhost (AKA run your own instance of) this bot under the following circumstances:
 - Your instance (referred to as a "clone") must be **private**.
     - As such, your clone must not be listed on any sort of public bot listing.
 - Self-hosting support will be provided, within limits of knowledge, for this fork only.
-- You acknowledge that issues and feature requests related to self-hosting will be lower priority than the fork owner's feature ideas.
+- You acknowledge that issues and feature requests specifically related to self-hosting will be lower priority than the fork owner's feature ideas. If you want things done on that front, your best bet is to start the pull request yourself.
+- You acknowledge that a fork's issues belong in that fork, not here.
 
 ### Configuration
 

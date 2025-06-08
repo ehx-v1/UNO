@@ -1,6 +1,6 @@
 # UNO
 
-This is an experimental new version of the Uno bot. DO NOT pester Ratismal with bugs in this, unless you have verified that they also occur in his original version.
+This is an experimental new version of the Uno bot. DO NOT pester Ratismal with bugs in this, unless you have verified that they also occur in their original version.
 
 ## Table of Contents
 

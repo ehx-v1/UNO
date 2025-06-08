@@ -17,12 +17,12 @@ This is an UNO bot designed for the Discord chat platform. The intent of this bo
 
 ```
 UNO HELP - Shows this message!
-UNO SUPPORT - Gets a link to my support guild!
+UNO SUPPORT - Gets a link to my support guild! Will be temporarily disabled when new features are added, until the experimental version has its own support guild.
 UNO JOIN - Joins (or creates) a game in the current channel!
 UNO QUIT - Quits the game! Party pooper.
 UNO START - Starts the game! Can only be used by the player who joined first.
 UNO TABLE - Shows everyone at the table.
-UNO PLAY <colour> <value> - Plays a card! Colours and values are interchangeable.
+UNO PLAY <color> <value> [pile] - Plays a card! Colors and values are interchangeable. Pile defaults to 1 (values higher than the amount of piles are treated as 1).
 UNO PICKUP - Picks up a card!
 UNO CALLOUT - Calls a player out for only having one card left!
 UNO HAND - Checks your hand!
@@ -40,7 +40,7 @@ One of the features of UNO is configurable rules, to make sure your games are as
 
 To set, the creator of the game has to run the command: `uno rules <key> <value>`.
 
-Current rules:
+Current and upcoming rules:
 
 ### Decks
 
@@ -176,8 +176,8 @@ Automatically plays a card after drawing, if possible. If a wild card is drawn, 
 You may selfhost (AKA run your own instance of) this bot under the following circumstances:
 - Your instance (referred to as a "clone") must be **private**.
     - As such, your clone must not be listed on any sort of public bot listing.
-- You understand that no support will be provided to aid you in self-hosting.
-- You agree to not submit any issues, features, or pull requests related to bugs exclusively related to self-hosting.
+- Self-hosting support will be provided, within limits of knowledge, for this fork only.
+- You acknowledge that issues and feature requests related to self-hosting will be lower priority than the fork owner's feature ideas.
 
 ### Configuration
 
@@ -192,4 +192,4 @@ Now, you can run the bot with `node index.js`.
 
 ## Disclaimer
 
-This bot is not associated with UNO or Mattel in any ways.
+This bot is not associated with UNO or Mattel, nor the maker of UNO Infinity in any ways.

@@ -1,6 +1,6 @@
-# UNO
+# Uno
 
-This is an experimental new version of the UNO bot. DO NOT pester Ratismal with bugs in this, unless you have verified that they also occur in his original version.
+This is an experimental new version of the Uno bot. DO NOT pester Ratismal with bugs in this, unless you have verified that they also occur in his original version.
 
 ## Table of Contents
 
@@ -12,9 +12,9 @@ This is an experimental new version of the UNO bot. DO NOT pester Ratismal with 
 
 ## Description
 
-This is an UNO bot designed for the Discord chat platform. The intent of this bot is to provide a fun and fulfilling UNO experience with your friends!
+This is an Uno bot designed for the Discord chat platform. The intent of this bot is to provide a fun and fulfilling Uno experience with your friends!
 
-I was feeling the original UNO bot, while quite fun, was lacking some important customization features, in particular playing with UNO decks other than the classic one. For this reason, I created this fork.
+I was feeling the original Uno bot, while quite fun, was lacking some important customization features, in particular playing with Uno decks other than the classic one. For this reason, I created this fork.
 
 ### Commands
 
@@ -39,7 +39,7 @@ The player will get their cards in a PM by the bot itself but to the command nee
 
 ## Configurable Rules
 
-One of the features of UNO is configurable rules, to make sure your games are as customizable as possible! You can view these using the `uno rules` command.
+One of the features of Uno is configurable rules, to make sure your games are as customizable as possible! You can view these using the `uno rules` command.
 
 To set, the creator of the game has to run the command: `uno rules <key> <value>`.
 
@@ -176,8 +176,8 @@ Automatically plays a card after drawing, if possible. If a wild card is drawn, 
 
 ## Tupperbox Integration
 
-The current state of compatibility with Tupperbox has not yet been tested. Long-term goals are:
-- Any amount of Tuppers, including multiple with the same owner, can take part in an UNO game.
+The current state of compatibility with [Tupperbox](https://tupperbox.app/) has not yet been tested. Long-term goals are:
+- Any amount of Tuppers, including multiple with the same owner, can take part in an Uno game.
 - Tuppers can run Uno commands as if they were regular users.
 - A Tupper's owner can join a game alongside their Tuppers.
 - Basically, Tuppers are treated the same as regular users, and are treated as separate from their owner.
@@ -204,4 +204,4 @@ Now, you can run the bot with `node index.js`.
 
 ## Disclaimer
 
-This bot is not associated with UNO or Mattel, nor the maker of UNO Infinity in any ways.
+This bot is not associated with Uno or Mattel, nor the maker of Uno Infinity in any ways.

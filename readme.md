@@ -1,7 +1,6 @@
 # UNO
 
-The time you spent looking at this readme could have been spent being productive.  
-Readmes kill. Play UNO instead. UNO saves lives.
+This is an experimental new version of the Uno bot. DO NOT pester Ratismal with bugs in this, unless you have verified that they also occur in his original version.
 
 ## Table of Contents
 
@@ -46,10 +45,75 @@ Current rules:
 ### Decks
 
 Key: `DECKS`
+Type: integer (soon string)
+Default: 1 (soon `classic`)
+
+This is the number of decks to use in the game.
+
+It's planned to change this into a comma-separated list of decks (allowing for values such as `party,all_wild,teams,spin,addon_swap,addon_reverse`). The same deck can be included more than once, so the current functionality can be achieved with a value of e.g. `classic,classic,classic`.
+
+Note that it will **NOT** be verified that the decks provided form a playable set of cards. If all cards in the deck except up to 1 are in players' hands (so that the Draw Pile is empty and the Discard Pile can't be shuffled to form a new Draw Pile), the game will instantly end in a tie.
+
+Supported values for deck names will be (in the first full release of this feature):
+- `classic`: Uno Classic (112 cards)
+- `addon_swap`: Uno Core Add-On Packs -- Swap Pack (16 cards)
+- `addon_speed`: Uno Core Add-On Packs -- Speed Pack (16 cards)
+- `addon_reverse`: Uno Core Add-On Packs -- Reverse Pack (16 cards)
+- `addon_stack`: Uno Core Add-On Packs -- Stack Pack (16 cards)
+- `themed_mario`: Uno Super Mario (112 cards)
+- `themed_mario_kart`: Uno Mario Kart (112 cards)
+- `party`: Uno Party (224 cards)
+- `attack`: Uno Attack
+- `all_wilds`: Uno All Wilds (112 cards)
+- `flip`: Uno Flip (112 cards)
+- `themed_flip_transformers`: Uno Flip Transformers (112 cards)
+- `flex`: Uno Flex (104 cards)
+- `no_mercy`: Uno Show 'Em No Mercy (168 cards)
+- `addon_no_mercy`: Uno Show 'Em No Mercy - Expansion Pack
+- `teams`: Uno Teams (112 cards)
+- `dos`: Dos (108 cards)
+- `dos2`: Dos Second Edition (108 cards)
+- `infinity`: Uno Infinity
+
+### Spin Roulette (upcoming)
+
+Key: not yet implemented, will be `SPIN_ROULETTE`
+Type: string
+Default: `"standard"`
+
+This is the Spin roulette used when playing a deck that features Spin cards. TBD which values besides `"standard"` will be supported.
+
+### Amount of Discard Piles (upcoming)
+
+Key: not yet implemented, will be `DISCARD_PILES`
 Type: integer
 Default: 1
 
-This is the number of decks to use in the game.
+This is the amount of discard piles used by the game.
+
+### Summing Cards (upcoming)
+
+Key: not yet implemented, will be `SUM`
+Type: boolean
+Default: false
+
+This is whether cards can be played across multiple discard piles such that their sum matches one of the discard piles. `DISCARD_PILES` must be 2 or higher for a value of `true` to have any meaningful effect.
+
+### Amount of Flex Power Cards (upcoming)
+
+Key: not yet implemented, will be `POWER_CARDS`
+Type: integer
+Default: 0
+
+This is the amount of Flex Power Cards each player has.
+
+### Players Per Team (upcoming)
+
+Key: not yet implemented, will be `TEAM_PLAYERS`
+Type: integer
+Default: 1
+
+This is the amount of players in each team.
 
 ### Initial Cards
 
